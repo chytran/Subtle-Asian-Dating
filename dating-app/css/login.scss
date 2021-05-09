@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+// Custom Colors
+$main-green: #C4E4DF;
+$main-white: #F8F8F6;
+
+// Z-index
+$z-tooltip: 10;
+$z-fixed: 100;
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+.hero__img {
+    max-width: 100%;
+    height: 100%;
+    width: 790px;
+    height: 789px;
+}
+
+.main-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+// Hero
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(to top, #F8F8F6, #C8E5E1, #C4E4DF);
+}
+
+
+.hero__container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+// form content
+.form__content {
+    height: 471px;
+    width: 461px;
+    background-color: #FFFFFF;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-right: -10px;
+}
+
+.language__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 70%;
+    margin-top: 10px;
+
+    .language__name {
+        opacity: 0.8;
+        font-family: "Poppins", sans-serif;
+        margin-right: 5px;
+    }
+
+    .symbol {
+        opacity: 0.7;
+    }
+}
+
+.language__container:hover {
+    opacity: 0.4;
+    cursor: pointer;
+}
+
+.form__title {
+    color: #6B6B6B;
+    font-size: 25px;
+    font-family: "Segoe UI", sans-serif;
+}
+
+.form {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 0.5rem;
+
+    .email__input {
+        width: 344px;
+        height: 67px;
+        padding-left: 1rem;
+        letter-spacing: 2px;
+        background-color: #EBF9F7;
+        border: 1px solid rgba(0,0,0,0.15);
+        font-size: 21px;
+        color: #6B6B6B;
+        border-radius: 5px;
+    }
+
+    .password__input {
+        width: 344px;
+        height: 67px;
+        padding-left: 1rem;
+        letter-spacing: 2px;
+        background-color: #EBF9F7;
+        border: 1px solid rgba(0,0,0,0.15);
+        font-size: 21px;
+        color: #6B6B6B;
+        border-radius: 5px;
+        margin-top: 1.5rem;
+    }
+
+    .login__button {
+        margin-top: 1.5rem;
+        width: 364px;
+        height: 67px;
+        background-color: #85CEC2;
+        border: transparent;
+        border-radius: 10px;
+        color: #FFF;
+        font-size: 26px;
+        font-family: "Segoe UI", sans-serif;
+        font-weight: 500;
+        transition: 0.5s;
+        cursor: pointer;
+    }
+
+    .login__button:hover {
+        background-color: #50C1AE;
+    }
+
+    .forget__button {
+        color: #85CEC2;
+        margin-top: 1rem;
+        cursor: pointer;
+        font-size: 20px;
+        font-family: "Segoe UI", sans-serif;
+        background-color: transparent;
+        border: transparent;
+        transition: 0.5s;
+    }
+
+    .forget__button:hover {
+        color: rgba(0,0,0,0.7);
+    }
+}
+
+// image
+.hero__img {
+    width: 790px;
+    height: 789px;
+    opacity: 0.8;
+}
