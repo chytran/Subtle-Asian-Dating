@@ -5,6 +5,7 @@ body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-family: "Poppins", sans-serif;
+  background-color: #111;
 }
 
 .hero__img {
@@ -42,6 +43,11 @@ body {
   background: linear-gradient(to top, #F8F8F6, #C8E5E1, #C4E4DF);
 }
 
+section {
+  position: relative;
+  width: 100%;
+}
+
 .hero__container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -72,6 +78,8 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   padding-right: -10px;
+  -webkit-box-shadow: 1px 1px 7px #121212;
+          box-shadow: 1px 1px 7px #121212;
 }
 
 .language__container {
@@ -137,6 +145,12 @@ body {
   font-size: 21px;
   color: #6B6B6B;
   border-radius: 5px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.form .email__input:hover {
+  opacity: 0.8;
 }
 
 .form .password__input {
@@ -150,6 +164,12 @@ body {
   color: #6B6B6B;
   border-radius: 5px;
   margin-top: 1.5rem;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.form .password__input:hover {
+  opacity: 0.8;
 }
 
 .form .login__button {
@@ -188,9 +208,156 @@ body {
   color: rgba(0, 0, 0, 0.7);
 }
 
+.form .forget__link {
+  color: #85CEC2;
+  margin-top: 1rem;
+  cursor: pointer;
+  font-size: 20px;
+  font-family: "Segoe UI", sans-serif;
+  background-color: transparent;
+  border: transparent;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.form .forget__link:hover {
+  color: rgba(0, 0, 0, 0.7);
+}
+
 .hero__img {
   width: 790px;
   height: 789px;
   opacity: 0.8;
+}
+
+/*=============================== HOME PAGE =========================================*/
+/*============================ NAVBAR ====================================*/
+.nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 2rem;
+  padding-left: 2rem;
+  z-index: 10000;
+}
+
+.nav__container {
+  position: relative;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #FFF;
+}
+
+.nav__container .logo__container {
+  font-size: 2.5rem;
+  text-transform: capitalize;
+  width: 55%;
+  cursor: pointer;
+}
+
+.nav__container .logo {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.nav__container .logo:hover {
+  color: #50C1AE;
+}
+
+.nav__container .nav__menu {
+  width: 45%;
+}
+
+.nav__container .nav__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100%;
+  padding: 0 5rem;
+}
+
+.nav__container .nav__item {
+  list-style: none;
+  padding-right: 2rem;
+}
+
+.nav__container .nav__link {
+  color: #FFF;
+  font-size: 1.7rem;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.nav__container .nav__link:hover {
+  color: #85CEC2;
+}
+
+/* HERO */
+.hero-home {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hero-home:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 40rem;
+  z-index: 1;
+  background: -webkit-gradient(linear, left bottom, left top, from(#111), to(transparent));
+  background: linear-gradient(to top, #111, transparent);
+}
+
+.fitBg-home {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  opacity: 0.65;
+  -webkit-transition: 10s ease;
+  transition: 10s ease;
 }
 /*# sourceMappingURL=login.css.map */

@@ -12,6 +12,7 @@ body {
     padding: 0;
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
+    background-color: #111;
 }
 
 .hero__img {
@@ -37,6 +38,10 @@ body {
     background: linear-gradient(to top, #F8F8F6, #C8E5E1, #C4E4DF);
 }
 
+section {
+    position: relative;
+    width: 100%;
+}
 
 .hero__container {
     display: flex;
@@ -56,6 +61,7 @@ body {
     align-items: center;
     flex-direction: column;
     padding-right: -10px;
+    box-shadow: 1px 1px 7px #121212;
 }
 
 .language__container {
@@ -105,6 +111,11 @@ body {
         font-size: 21px;
         color: #6B6B6B;
         border-radius: 5px;
+        transition: 0.5s;
+    }
+
+    .email__input:hover {
+        opacity: 0.8;
     }
 
     .password__input {
@@ -118,6 +129,11 @@ body {
         color: #6B6B6B;
         border-radius: 5px;
         margin-top: 1.5rem;
+        transition: 0.4s;
+    }
+
+    .password__input:hover {
+        opacity: 0.8;
     }
 
     .login__button {
@@ -153,6 +169,21 @@ body {
     .forget__button:hover {
         color: rgba(0,0,0,0.7);
     }
+
+    .forget__link {
+        color: #85CEC2;
+        margin-top: 1rem;
+        cursor: pointer;
+        font-size: 20px;
+        font-family: "Segoe UI", sans-serif;
+        background-color: transparent;
+        border: transparent;
+        transition: 0.5s;
+    }
+
+    .forget__link:hover {
+        color: rgba(0,0,0,0.7);
+    }
 }
 
 // image
@@ -160,4 +191,105 @@ body {
     width: 790px;
     height: 789px;
     opacity: 0.8;
+    
+}
+
+/*=============================== HOME PAGE =========================================*/
+/*============================ NAVBAR ====================================*/
+
+.nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2rem;
+    padding-left: 2rem;
+    z-index: 10000;
+}
+
+.nav__container {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #FFF;
+
+    .logo__container {
+        font-size: 2.5rem;
+        text-transform: capitalize;
+        width: 55%;
+        cursor: pointer;
+    }
+
+    .logo {
+        transition: 0.3s;
+    }
+
+    .logo:hover {
+        color: #50C1AE;
+    }
+
+    .nav__menu {
+        width: 45%
+    }
+
+    .nav__list {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+        width: 100%;
+        padding: 0 5rem;
+    }
+
+    .nav__item {
+        list-style: none;
+        padding-right: 2rem;
+    }
+
+    .nav__link {
+        color: #FFF;
+        font-size: 1.7rem;
+        transition: 0.3s;
+    }
+
+    .nav__link:hover {
+        color: #85CEC2;
+    }
+}
+
+/* HERO */
+.hero-home {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-home:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 40rem;
+    z-index: 1;
+    background: linear-gradient(to top, #111, transparent);
+}
+
+.fitBg-home {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.65;
+    transition: 10s ease;
 }
