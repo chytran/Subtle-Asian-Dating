@@ -201,7 +201,7 @@ section {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100vw;
+    width: 92vw;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -294,12 +294,26 @@ section {
 .fitBg-home {
     position: absolute;
     top: 0;
-    left: 0;
+    
     width: 100vw;
     height: 100vh;
     object-fit: cover;
     opacity: 0.65;
     transition: 10s ease;
+    animation: linear;
+    animation-name: background;
+    animation-duration: 3.5s;
+}
+
+@keyframes background {
+    0% {
+        transform: scale(1.2);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+    
 }
 
 .message__container-home {
@@ -311,8 +325,20 @@ section {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-
+    animation: linear;
+    animation-name: message;
+    animation-duration: 3.5s;
     
+    @keyframes message {
+        0%{
+            left:  -50%;
+        }
+        100%{
+            left: 3%;
+        }
+        
+    }
+
     .message__title-home {
         color: #FFF;
         font-size: 3rem;
@@ -324,12 +350,12 @@ section {
     }
 
     .message__start-home {
-        color: #FFF;
+        color: #121212;
         font-size: 1.5rem;
-        background-color: #121212;
-        
-        padding: 0.5rem;
-        margin-top: 1rem;
+        background-color: #FFF;
+        border: none;
+        padding: 0.7rem;
+        margin-top: 1.5rem;
         border-radius: 10px;
         cursor: pointer;
         transition: 0.3s;

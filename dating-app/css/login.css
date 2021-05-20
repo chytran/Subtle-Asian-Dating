@@ -236,7 +236,7 @@ section {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100vw;
+  width: 92vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -359,7 +359,6 @@ section {
 .fitBg-home {
   position: absolute;
   top: 0;
-  left: 0;
   width: 100vw;
   height: 100vh;
   -o-object-fit: cover;
@@ -367,6 +366,34 @@ section {
   opacity: 0.65;
   -webkit-transition: 10s ease;
   transition: 10s ease;
+  -webkit-animation: linear;
+          animation: linear;
+  -webkit-animation-name: background;
+          animation-name: background;
+  -webkit-animation-duration: 3.5s;
+          animation-duration: 3.5s;
+}
+
+@-webkit-keyframes background {
+  0% {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes background {
+  0% {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
 }
 
 .message__container-home {
@@ -387,6 +414,30 @@ section {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-animation: linear;
+          animation: linear;
+  -webkit-animation-name: message;
+          animation-name: message;
+  -webkit-animation-duration: 3.5s;
+          animation-duration: 3.5s;
+}
+
+@-webkit-keyframes message {
+  0% {
+    left: -50%;
+  }
+  100% {
+    left: 3%;
+  }
+}
+
+@keyframes message {
+  0% {
+    left: -50%;
+  }
+  100% {
+    left: 3%;
+  }
 }
 
 .message__container-home .message__title-home {
@@ -400,11 +451,12 @@ section {
 }
 
 .message__container-home .message__start-home {
-  color: #FFF;
+  color: #121212;
   font-size: 1.5rem;
-  background-color: #121212;
-  padding: 0.5rem;
-  margin-top: 1rem;
+  background-color: #FFF;
+  border: none;
+  padding: 0.7rem;
+  margin-top: 1.5rem;
   border-radius: 10px;
   cursor: pointer;
   -webkit-transition: 0.3s;
