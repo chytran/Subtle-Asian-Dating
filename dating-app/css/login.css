@@ -236,7 +236,7 @@ section {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
+  width: 100vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -263,7 +263,6 @@ section {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  color: #FFF;
 }
 
 .nav__container .logo__container {
@@ -276,6 +275,7 @@ section {
 .nav__container .logo {
   -webkit-transition: 0.3s;
   transition: 0.3s;
+  color: #FFF;
 }
 
 .nav__container .logo:hover {
@@ -302,6 +302,7 @@ section {
           flex-direction: row;
   width: 100%;
   padding: 0 5rem;
+  text-decoration: none;
 }
 
 .nav__container .nav__item {
@@ -314,6 +315,8 @@ section {
   font-size: 1.7rem;
   -webkit-transition: 0.3s;
   transition: 0.3s;
+  list-style: none;
+  text-decoration: none;
 }
 
 .nav__container .nav__link:hover {
@@ -323,7 +326,7 @@ section {
 /* HERO */
 .hero-home {
   position: relative;
-  width: 100%;
+  width: 100vw;
   min-height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -348,16 +351,67 @@ section {
   background: linear-gradient(to top, #111, transparent);
 }
 
+.hero__container-home {
+  width: 100vw;
+  height: 100vh;
+}
+
 .fitBg-home {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
   -o-object-fit: cover;
      object-fit: cover;
   opacity: 0.65;
   -webkit-transition: 10s ease;
   transition: 10s ease;
+}
+
+.message__container-home {
+  z-index: 10000;
+  position: absolute;
+  top: 40%;
+  left: 3%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.message__container-home .message__title-home {
+  color: #FFF;
+  font-size: 3rem;
+}
+
+.message__container-home .message__intro-home {
+  color: #FFF;
+  font-size: 1.75rem;
+}
+
+.message__container-home .message__start-home {
+  color: #FFF;
+  font-size: 1.5rem;
+  background-color: #121212;
+  padding: 0.5rem;
+  margin-top: 1rem;
+  border-radius: 10px;
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.message__container-home .message__start-home:hover {
+  opacity: 0.7;
 }
 /*# sourceMappingURL=login.css.map */

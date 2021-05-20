@@ -201,7 +201,7 @@ section {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 100vw;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -216,7 +216,6 @@ section {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    color: #FFF;
 
     .logo__container {
         font-size: 2.5rem;
@@ -227,6 +226,7 @@ section {
 
     .logo {
         transition: 0.3s;
+        color: #FFF;
     }
 
     .logo:hover {
@@ -244,6 +244,7 @@ section {
         flex-direction: row;
         width: 100%;
         padding: 0 5rem;
+        text-decoration: none;
     }
 
     .nav__item {
@@ -255,6 +256,8 @@ section {
         color: #FFF;
         font-size: 1.7rem;
         transition: 0.3s;
+        list-style: none;
+        text-decoration: none;
     }
 
     .nav__link:hover {
@@ -265,7 +268,7 @@ section {
 /* HERO */
 .hero-home {
     position: relative;
-    width: 100%;
+    width: 100vw;
     min-height: 100vh;
     display: flex;
     justify-content: center;
@@ -283,13 +286,56 @@ section {
     background: linear-gradient(to top, #111, transparent);
 }
 
+.hero__container-home {
+    width: 100vw;
+    height:  100vh;
+}
+
 .fitBg-home {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
     object-fit: cover;
     opacity: 0.65;
     transition: 10s ease;
+}
+
+.message__container-home {
+    z-index: 10000;
+    position: absolute;
+    top: 40%;
+    left: 3%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    
+    .message__title-home {
+        color: #FFF;
+        font-size: 3rem;
+    }
+
+    .message__intro-home {
+        color: #FFF;
+        font-size: 1.75rem;
+    }
+
+    .message__start-home {
+        color: #FFF;
+        font-size: 1.5rem;
+        background-color: #121212;
+        
+        padding: 0.5rem;
+        margin-top: 1rem;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+
+    .message__start-home:hover {
+        opacity: 0.7;
+    }
 }
