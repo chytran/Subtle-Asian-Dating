@@ -15,6 +15,10 @@ body {
     background-color: #111;
 }
 
+input {
+    outline: none;
+}
+
 .hero__img {
     max-width: 100%;
     height: 100%;
@@ -53,7 +57,7 @@ section {
 
 // form content
 .form__content {
-    height: 471px;
+    height: 531px;
     width: 461px;
     background-color: #FFFFFF;
     border-radius: 20px;
@@ -179,6 +183,7 @@ section {
         background-color: transparent;
         border: transparent;
         transition: 0.5s;
+        text-decoration: none;
     }
 
     .forget__link:hover {
